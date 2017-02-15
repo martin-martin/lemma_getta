@@ -21,7 +21,7 @@ def peek(dictionary, n):
     return {k: dictionary[k] for k in list(dictionary.keys())[:n]}
 
 # this should be able to stay the same for all files, change to process sliced files
-word_freq_file = "lemmatize/{0}/{1}".format(language, filename)
+word_freq_file = "source/words/{0}_{1}".format(language, filename)
 
 # get the data from the files
 with open(word_freq_file, "r") as f:
